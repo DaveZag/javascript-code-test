@@ -1,20 +1,15 @@
 {
-  "name": "javascript-code-test",
+  "name": "jest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DaveZag/javascript-code-test.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/DaveZag/javascript-code-test/issues"
-  },
-  "homepage": "https://github.com/DaveZag/javascript-code-test#readme"
+  "devDependencies": {
+    "jest": "^29.1.2"
+  }
 }
