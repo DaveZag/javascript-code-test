@@ -35,8 +35,11 @@ class Calculator {
   }
 }
 
-const calc = new Calculator(9, 1);
+const capitalize = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
 
 exports.stringLength = stringLength;
 exports.reverseString = reverseString;
 exports.Calculator = Calculator;
+exports.capitalize = capitalize;

@@ -1,4 +1,6 @@
-const { stringLength, reverseString, Calculator } = require("./index.js");
+const { stringLength, reverseString, Calculator, capitalize } = require("./index.js");
+
+/*======================== FIRST TASK ===========================*/
 
 // test for the string length function
 test("Properly returns the number of characters in a string", () => {
@@ -6,11 +8,15 @@ test("Properly returns the number of characters in a string", () => {
   expect(stringLength(greet)).toBe(5);
 });
 
+/*======================== SECOND TASK ===========================*/
+
 // test for the reverse string function
 test("Properly reverse a string", () => {
   const greet = "hello";
   expect(reverseString(greet)).toBe("olleh");
 });
+
+/*======================== THIRD TASK ===========================*/
 
 // test for addition operation
 describe("calculator add operation", () => {
@@ -78,4 +84,11 @@ describe("calculator divide operations ", () => {
   test("Is true", () => {
     expect(calculate.multiply()).toBeTruthy();
   });
+});
+
+/*======================== FOURTH TASK ===========================*/
+
+test("Properly returns a Capitalized string", () => {
+  const capital = capitalize("john");
+  expect(capital).toBe("John");
 });
